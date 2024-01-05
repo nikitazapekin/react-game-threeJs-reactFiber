@@ -14,6 +14,7 @@ import { useEffect, useState, useRef } from 'react';
 // Cube.jsx
 
 import { Box } from "@react-three/drei";
+import { Block } from "./block.jsx";
 
  const UnmovableCube = () => {
 
@@ -24,9 +25,6 @@ import { Box } from "@react-three/drei";
   ); 
 };
  
-
-
-
 const shadowOffset = 50;
 
 export const usePointerLockControlsStore = create(() => ({
@@ -83,6 +81,7 @@ export const App = () => {
                 <Ground />
                 <Player />
                 <Cubes />
+                <Block />
             </Physics>
         </>
     )
