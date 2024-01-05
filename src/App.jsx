@@ -15,6 +15,7 @@ import { useEffect, useState, useRef } from 'react';
 
 import { Box } from "@react-three/drei";
 import { Block } from "./block.jsx";
+import { Platform } from "./components/platform/platform.jsx";
 
  const UnmovableCube = () => {
 
@@ -82,6 +83,18 @@ export const App = () => {
                 <Player />
                 <Cubes />
                 <Block />
+                <Platform posX={20} posY={1} posZ={20} width={2} height={2} deepth={2} />
+
+
+                <Platform posX={27} posY={2} posZ={20} width={2} height={4} deepth={2} />
+                
+                <Platform posX={34} posY={3} posZ={20} width={2} height={6} deepth={2} />
+
+
+                <Platform posX={200} posY={0} posZ={200} width={900} height={600} deepth={2} />
+                <Platform posX={-200} posY={0} posZ={-200} width={900} height={600} deepth={2} />
+                <Platform posX={200} posY={0} posZ={200} width={2} height={600} deepth={900} />
+                <Platform posX={-200} posY={0} posZ={-200} width={2} height={600} deepth={900} />
             </Physics>
         </>
     )

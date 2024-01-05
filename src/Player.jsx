@@ -67,7 +67,7 @@ export const Player = () => {
     });
 
     const doJump = () => {
-        playerRef.current.setLinvel({x: 0, y: 8, z: 0});
+        playerRef.current.setLinvel({x: 0, y: 18, z: 0});
     }
 
     const setSwayingAnimationParams = () => {
