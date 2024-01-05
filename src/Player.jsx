@@ -7,7 +7,7 @@ import {usePersonControls} from "./hooks.js";
 import {useFrame} from "@react-three/fiber";
 import {useAimingStore, Weapon} from "./Weapon.jsx";
 
-const MOVE_SPEED = 5;
+const MOVE_SPEED = 15;
 const direction = new THREE.Vector3();
 const frontVector = new THREE.Vector3();
 const sideVector = new THREE.Vector3();

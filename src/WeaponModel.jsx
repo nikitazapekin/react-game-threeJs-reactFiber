@@ -1,18 +1,21 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useGLTF } from "@react-three/drei";
+//import {Car} from "./model/Car"
 
 export function WeaponModel(props) {
     const { nodes, materials } = useGLTF("/weapon.glb");
+    //https://sketchfab.com/3d-models/wood-stick-02-0ab534c493e14f67bac01ee94f20e43f
     return (
         <group {...props} dispose={null}>
-            <mesh
+          
+       <mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.Object_4.geometry}
                 material={materials.gun_tex}
                 scale={1.084}
-            />
-            <mesh
+    /> 
+          <mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.Object_6.geometry}
@@ -76,7 +79,7 @@ export function WeaponModel(props) {
                 position={[0.107, 0.018, 0.366]}
                 rotation={[-0.305, 0, 0]}
                 scale={1.09}
-            />
+    /> 
             <mesh
                 castShadow
                 receiveShadow
@@ -108,8 +111,8 @@ export function WeaponModel(props) {
                 material={materials.gun_tex}
                 position={[0, -0.273, -0.028]}
                 scale={1.084}
-            />
-            <mesh
+    /> 
+           <mesh
                 castShadow
                 receiveShadow
                 geometry={nodes.Object_32.geometry}
@@ -129,7 +132,7 @@ export function WeaponModel(props) {
                 geometry={nodes.Object_36.geometry}
                 material={materials.gun_tex}
                 position={[0, 0, -0.46]}
-            />
+    /> 
         </group>
     );
 }
