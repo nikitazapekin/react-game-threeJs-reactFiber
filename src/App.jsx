@@ -16,7 +16,12 @@ import { useEffect, useState, useRef } from 'react';
 import { Box } from "@react-three/drei";
 import { Block } from "./block.jsx";
 import { Platform } from "./components/platform/platform.jsx";
+import { Model } from "./model/Car.jsx";
 
+
+import { Canvas } from "@react-three/fiber";
+import { Mod } from "./Mod.jsx";
+import { Environment } from "@react-three/drei";
  const UnmovableCube = () => {
 
   return (
@@ -54,18 +59,30 @@ export const App = () => {
           }
         );
       }, []);
-  
-    return (
+      
+      return (
         <>
+
             <PointerLockControls onLock={pointerLockControlsLockHandler} onUnlock={pointerLockControlsUnlockHandler} />
+  
+
+
+
+
+
+
+
          <Sky sunPosition={[100, 20, 100]} /> 
            <group>
+    
 
         
 <UnmovableCube />
 
            </group>
- 
+
+
+
             <ambientLight intensity={1.5} />
           <directionalLight
                 castShadow
@@ -95,14 +112,19 @@ export const App = () => {
                 <Platform posX={-200} posY={0} posZ={-200} width={900} height={600} deepth={2} />
                 <Platform posX={200} posY={0} posZ={200} width={2} height={600} deepth={900} />
                 <Platform posX={-200} posY={0} posZ={-200} width={2} height={600} deepth={900} />
+
+
+                <Mod />
             </Physics>
+
         </>
     )
 }
 
 export default App;
  
-
+//npm install three @types/three @react-three/fiber
+//npm install @react-three/drei
 
 /*
 import * as TWEEN from "@tweenjs/tween.js";

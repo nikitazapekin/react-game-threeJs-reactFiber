@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/wood-stick-02-0ab534c493e14f67bac01ee94f
 Title: Wood Stick 02
 */
 
-/*
+
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
@@ -26,4 +26,4 @@ export function Model(props) {
 }
 
 //useGLTF.preload('/scene.gltf')
-useGLTF.preload('../../public/car/scene.gltf') */
+useGLTF.preload('../../public/car/scene.gltf') 

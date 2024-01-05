@@ -34,7 +34,7 @@ export const Block = () => {
       
         type="fixed"
          colliders={false}>
-            <mesh receiveShadow position={[100, 0, 0]} // позицияя куба
+            <mesh receiveShadow position={[100, 50, 0]} // позицияя куба
          
              >
                 <boxGeometry args={[50, 50, 50]} // размеры куба
@@ -44,7 +44,7 @@ export const Block = () => {
 
                 <meshStandardMaterial color="gray" map={texture} map-repeat={[1, 1]} />
             </mesh>
-            <CuboidCollider args={[25, 25, 25]} position={[100, 0, 0]} 
+            <CuboidCollider args={[25, 25, 25]} position={[100, 50, 0]} 
             // аргс- размер коллизии
             // позиция - позиция коллизии
             /> 
