@@ -11,7 +11,6 @@ import { Suspense } from "react";
 import {create} from "zustand";
 import { TextureLoader } from 'three';
 import { useEffect, useState, useRef } from 'react';
-import { useBox } from "@react-three/cannon";
 // Cube.jsx
 
 import { Box } from "@react-three/drei";
